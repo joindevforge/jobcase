@@ -8,8 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'Founders':[ 'Founders Grotesk ','sans sarif'],
-        "Inter":['Inter', 'sans-serif']
+        'Founders':[ 'Founders Grotesk ','sans-sarif'],
+        "Inter":['Inter', 'sans-serif'],
+        "cond" :['Founders Grotesk X-Condensed','sans-sarif']
 
       },
       colors:{
