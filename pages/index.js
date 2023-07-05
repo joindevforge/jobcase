@@ -81,7 +81,6 @@ const search2 = [
 export default function Home() {
   return (
     <div className=" font-Founders ">
-      <Header />
       <Hero />
       <div className="bg-[#DBEFFE] py-[3rem] ">
         <h3 className="w-full text-center text-[1.75rem] pb-[24px] lg:text-[3rem] font-[500] px-4">
@@ -249,7 +248,7 @@ export default function Home() {
             <FiArrowRight className="ml-2" />
           </Link>
           </div>
-          <Footer/>
+
     </div>
     
   );
