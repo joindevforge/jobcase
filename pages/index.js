@@ -235,7 +235,7 @@ export default function Home() {
       </div>
       <div className="pt-[4rem] flex justify-center  items-center">
         <div className="max-w-[1280px] w-full">
-          <h3 className="text-[2.25rem] w-full text-start bg-red-400 font-[500] pb-[2.25rem] px-2">
+          <h3 className="text-[2.25rem] w-full text-start  font-[500] pb-[2.25rem] px-2">
             Trending topics
           </h3>
       <div className="pt-[1rem] w-full md:px-0 px-4  pb-[5rem]">
