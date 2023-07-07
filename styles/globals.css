@@ -16,3 +16,16 @@
       }
     }
   }
+
+  .ass{
+    min-height: auto;
+  }
+.as{
+    margin-bottom: initial;
+    padding-bottom: initial;
+  }
+.resources{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }

@@ -78,15 +78,25 @@ const search2 = [
   },
 ];
 
+const resources = [
+  "Tips to get hired",
+  "Job search strategies",
+  "Work from home",
+  "Avoiding scams",
+  "Popular places to work",
+  "Career discovery",
+  "Building your network"
+];
+
 export default function Home() {
   return (
     <div className=" font-Founders ">
       <Hero />
       <div className="bg-[#DBEFFE] md:pt-[74px] pt-[40px]  pb-[40px] md:pb-[90px] ">
-        <h3 className="w-full text-center text-[1.75rem] pb-[24px] lg:text-[3rem] font-[500] px-4">
+        <h3 className="w-full text-center text-[1.75rem] pb-[24px] md:text-[3rem] font-[500] px-4">
           Top ways to help you get ahead
         </h3>
-        <div className="w-full h-full flex items-center justify-center pt-[]">
+        <div className="w-full h-full flex items-center justify-center  md:px-20 px-4">
           <div className="max-w-[1296px] w-full px-4 md:px-0  grid lg:grid-cols-3 grid-cols-1 gap-4 items-center justify-center">
             {card1data.map((item, index) => {
               return (
@@ -103,7 +113,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[#fafafa] md:p-[5rem] p-[2.5rem] px-4 flex justify-center">
-        <div className=" w-full pt-3  ">
+        <div className="  md:max-w-[1296] w-full pt-3  ">
           <h3 className="w-full text-start text-[1.75rem] whitespace-nowrap pb-[10px] lg:text-[3rem] font-[500] ">
             Job searching made easy
           </h3>
@@ -139,7 +149,7 @@ export default function Home() {
                 })}
               </ul>
               <div className="w-full h-full   flex justify-center mt-8">
-                <button className=" h-[50px] rounded-[8px] px-[2rem] w-full lg:w-[16%] whitespace-nowrap border-2 border-bluee text-blueee text-bluee hover:bg-indigo text-[1.1875rem] font-[500]  ">
+                <button className=" h-[50px] rounded-[8px] px-[2rem] w-full flex items-center justify-center md:w-[18%] whitespace-nowrap border-2 border-bluee text-blueee text-bluee hover:bg-indigo text-[1.1875rem] font-[500]  ">
                   Explore more jobs
                 </button>
               </div>
@@ -153,10 +163,10 @@ export default function Home() {
           See what millions of workers are saying
         </h3>
         <div className="pt-[1rem] w-full h-full flex flex-col items-center">
-        <div className="max-w-[1296px] w-full">
-        <Carousel />
-        </div>
-          
+          <div className="max-w-[1296px] w-full">
+            <Carousel />
+          </div>
+
           <div className="w-full h-full flex justify-center py-8">
             <button className=" h-[50px] rounded-[8px] mx-4 px-[2rem] w-full md:w-[25%] border-2 border-bluee font-[500]  text-bluee hover:bg-indigo text-[1.1875rem]">
               Explore the jobcase community
@@ -165,57 +175,58 @@ export default function Home() {
         </div>
       </div>
       <div className="pt-[2rem]">
-        <h3 className="w-full   pb-[10px] font-FoundersA text-center text-[3rem] font-[500] px-4">
+        <h3 className="w-full   pb-[10px] font-FoundersA text-center md:text-[3rem] text-[2rem] leading-[38px] font-[500] px-4">
           Work with top employers & local businesses
         </h3>
-        <div className="my-5 pb-[2rem] md:pb-[4rem] flex justify-center  ">
-          <div className="grid md2:grid-cols-6 grid-cols-3 gap-5 items-center justify-center mx-4 w-full max-w-[1280px]  ">
+        <div className="my-10 pb-[2rem] md:pb-[4rem] flex justify-center  ">
+          <div className="grid md2:grid-cols-6  grid-cols-3 gap-5 items-center justify-center mx-4 w-full max-w-[1280px]  ">
             {images.map((item, index) => {
               return (
-                <div key={index} className="md:w-[150px] bg-red-600  max-w-full max-h-full flex justify-center overflow-hidden md:h-[48px]">
-                  <img
-                    src={item}
-                    alt="as"
-                    className="flex justify-center"
-                  />
+                <div
+                  key={index}
+                  className="w-full flex items-center justify-center"
+                >
+                  <div className="md:w-[150px]   max-w-full max-h-full flex justify-center overflow-hidden md:h-[48px]">
+                    <img src={item} alt="as" className="flex justify-center" />
+                  </div>
                 </div>
               );
             })}
           </div>
         </div>
       </div>
-      <div className="lg:pt-[3.5rem] lg:pb-0 p-[2rem] bg-bluee flex items-center justify-center flex-wrap">
-        <p className="lg:text-[3.5rem] text-[2rem] font-[700] font-cond text-white text-center pr-12">
+      <div className=" bg-bluee ass  p-0 px-8  py-[3rem]  md:max-h-[162px] md:p-[3.5rem] flex items-center  justify-center flex-wrap">
+        <p className="lg:text-[3.5rem] text-[3.5rem]   leading-[3.125rem] mt-4 mr-6 font-[700] font-cond   as text-white text-center">
           GET TOGETHER. GET AHEAD.
         </p>
-        <button className="lg:w-[160px] w-full h-[50px] bg-orange-600 mt-10 lg:mt-0 text-white font-[500] rounded-[12px]">
+        <button className="md:w-[160px] w-full h-[50px] bg-[#FC6142] mt-2 lg:mt-0 text-white font-Inter font-[700] rounded-[12px]">
           Join for free
         </button>
       </div>
-      <div className="w-full h-full flex items-center justify-center pt-[3rem]">
-        <div className="container h-full ">
+      <div className="w-full h-full flex items-center justify-center md:p-[5rem] p-0 pt-[2rem] md:pt-0">
+        <div className="max-w-[1280px] w-full px-4 md:px-0 h-full ">
           <div className="w-full flex  ">
-            <div className="lg:flex-[50%] flex-[100%]">
-              <h3 className="text-[2.25rem] font-[500] pb-[2.25rem] px-2">
+            <div className="md2:flex-[50%]   flex-[100%]">
+              <h3 className="md2:text-[2.25rem] text-[1.5rem] font-[500] md:pb-[2.25rem] pb-[1rem] ">
                 Discover free resources
               </h3>
-              <div className="grid lg:grid-cols-3 grid-cols-1 w-full lg:gap-6 gap-4 px-4">
-                <Chips2 title="Tips to get hired" />
-                <Chips2 title="Tips to get hired" />
-                <Chips2 title="Tips to get hired" />
-                <Chips2 title="Tips to get hired" />
-                <Chips2 title="Tips to get hired" />
-                <Chips2 title="Tips to get hired" />
-                <Chips2 title="Tips to get hired" />
+              <div className=" w-full md:w-[660px] resources md:flex grid grid-cols-1 resources   flex-wrap ">
+                {resources.map((item, index) => {
+                 return(<>
+                 <div key={index} className="mr-[1rem]">
+                 <Chips2  title={item} />
+                 </div>
+                 </>)
+                })}
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="hidden md2:block w-full">
               <img src="/images/landingPage/last.svg" alt="as" />
             </div>
           </div>
           <Link
             href="#"
-            className="text-bluee flex items-center text-[18px] font-[500] mt-5"
+            className="text-bluee flex items-center text-[18px] font-[500]"
           >
             See them all
             <FiArrowRight className="ml-2" />
@@ -223,36 +234,36 @@ export default function Home() {
         </div>
       </div>
       <div className="pt-[4rem] flex justify-center  items-center">
-        <div className="container">
-          <h3 className="text-[2.25rem] text-start font-[500] pb-[2.25rem] px-2">
+        <div className="max-w-[1280px] w-full">
+          <h3 className="text-[2.25rem] w-full text-start bg-red-400 font-[500] pb-[2.25rem] px-2">
             Trending topics
           </h3>
-        </div>
+      <div className="pt-[1rem] w-full md:px-0 px-4  pb-[5rem]">
+        <ul className="flex  md:flex-wrap   overflow-x-scroll no-scrollbar ">
+          {search2.map((item, index) => {
+            return (
+              <>
+              <li key={index} className="mx-2">
+              <Chips3
+                  
+                  title={item.title}
+                  followers={item.followers}
+                />
+              </li>
+              </>
+            );
+          })}
+        </ul>
+        <Link
+          href="#"
+          className="text-bluee flex items-center text-[18px]  font-[500] mt-5"
+        >
+          See what people are talking about
+          <FiArrowRight className="ml-2" />
+        </Link>
       </div>
-      <div className="pt-[1rem] w-full lg:px-12 px-4  pb-[5rem]">
-            <ul className="flex md:flex-wrap   justify-between  overflow-x-scroll">
-              {search2.map((item, index) => {
-                return (
-                  <>
-                    <Chips3
-                      key={index}
-                      title={item.title}
-                      followers={item.followers}
-                    />
-                  </>
-                );
-              })}
-            </ul>
-            <Link
-            href="#"
-            className="text-bluee flex items-center text-[18px]  font-[500] mt-5"
-          >
-           See what people are talking about
-            <FiArrowRight className="ml-2" />
-          </Link>
-          </div>
-
     </div>
-    
+    </div>
+    </div>
   );
 }
