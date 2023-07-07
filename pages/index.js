@@ -203,7 +203,7 @@ export default function Home() {
           Join for free
         </button>
       </div>
-      <div className="w-full h-full flex items-center justify-center md:p-[5rem] p-0 pt-[2rem] md:pt-0">
+      <div className="w-full h-full flex items-center justify-center md:p-[5rem] p-0 pt-[2rem] ">
         <div className="max-w-[1280px] w-full px-4 md:px-0 h-full ">
           <div className="w-full flex  ">
             <div className="md2:flex-[50%]   flex-[100%]">
@@ -233,9 +233,9 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="pt-[4rem] flex justify-center  items-center">
+      <div className="pt-[3rem] flex justify-center  items-center">
         <div className="max-w-[1280px] w-full">
-          <h3 className="text-[2.25rem] w-full text-start  font-[500] pb-[2.25rem] px-2">
+          <h3 className="text-[2.25rem] w-full text-start  font-[500]  px-2">
             Trending topics
           </h3>
       <div className="pt-[1rem] w-full md:px-0 px-4  pb-[5rem]">
@@ -256,7 +256,7 @@ export default function Home() {
         </ul>
         <Link
           href="#"
-          className="text-bluee flex items-center text-[18px]  font-[500] mt-5"
+          className="text-bluee flex items-center text-[19px]  font-[500] mt-1"
         >
           See what people are talking about
           <FiArrowRight className="ml-2" />
