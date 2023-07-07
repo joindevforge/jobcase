@@ -10,11 +10,19 @@ module.exports = {
       fontFamily:{
         'Founders':[ 'Founders Grotesk ','sans-sarif'],
         "Inter":['Inter', 'sans-serif'],
-        "cond" :['Founders Grotesk X-Condensed','sans-sarif']
+        "cond" :['Founders Grotesk X-Condensed','sans-sarif'],
+        'FoundersA':[ 'Founders Grotesk ','sans-sarif','Arial'],
 
       },
       colors:{
-        "blue":"#2c04bd"
+        "bluee":"#2c04bd",
+        "indigo":"#c4b5fd"
+      },
+      screens:{
+        "lg":"1440px",
+        "md":"1024px",
+        "md2":"1280px",
+        "sm":"832px"
       }
     },
   },

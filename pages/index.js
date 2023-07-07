@@ -82,12 +82,12 @@ export default function Home() {
   return (
     <div className=" font-Founders ">
       <Hero />
-      <div className="bg-[#DBEFFE] py-[3rem] ">
+      <div className="bg-[#DBEFFE] md:pt-[74px] pt-[40px]  pb-[40px] md:pb-[90px] ">
         <h3 className="w-full text-center text-[1.75rem] pb-[24px] lg:text-[3rem] font-[500] px-4">
           Top ways to help you get ahead
         </h3>
-        <div className="w-full h-full flex items-center justify-center pt-[10px]">
-          <div className="container   grid lg:grid-cols-3 grid-cols-1 items-center justify-center gap-5   px-4">
+        <div className="w-full h-full flex items-center justify-center pt-[]">
+          <div className="max-w-[1296px] w-full px-4 md:px-0  grid lg:grid-cols-3 grid-cols-1 gap-4 items-center justify-center">
             {card1data.map((item, index) => {
               return (
                 <Card1
@@ -102,34 +102,34 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[#fafafa] md:p-[5rem] p-[2.5rem] flex justify-center">
-        <div className=" w-full  ">
-          <h3 className="w-full text-start text-[1.75rem] pb-[10px] lg:text-[3rem] font-[500] px-4">
+      <div className="bg-[#fafafa] md:p-[5rem] p-[2.5rem] px-4 flex justify-center">
+        <div className=" w-full pt-3  ">
+          <h3 className="w-full text-start text-[1.75rem] whitespace-nowrap pb-[10px] lg:text-[3rem] font-[500] ">
             Job searching made easy
           </h3>
-          <div className="md:flex md:flex-row    items-center justify-between">
-            <div className="relative w-full h-full mx-2 my-3 md:my-0">
+          <div className="md:flex md:flex-row w-full    items-center justify-between">
+            <div className="relative w-full h-full my-1 md:my-0">
               <input
-                className="py-[13px] pr-[16px] pl-[48px] rounded-[4px] h-[50px] w-full bg-white border border-zinc-300 "
-                placeholder="enter your Job title"
+                className="py-[13px] pr-[16px] pl-[48px] font-Inter text-[1rem] rounded-[4px] h-[50px] md:w-[97%] w-full placeholder:text-zinc-700 bg-white border border-zinc-500 "
+                placeholder="Enter your Job title"
               />
-              <BiSearch className="absolute top-[35%] left-[2%] h-[1rem] w-[1rem] text-zinc-500" />
+              <BiSearch className="absolute top-[30%] left-[4%] h-[1.5rem] w-[1.5rem] text-zinc-500" />
             </div>
-            <div className="relative w-full h-full  mx-2 my-3 md:my-0">
+            <div className="relative w-full h-full  my-3 md:my-0">
               <input
-                className="py-[13px] pr-[16px] pl-[48px] rounded-[4px] h-[50px] w-full bg-white border border-zinc-300 "
-                value="lucknow,"
+                className="py-[13px] pr-[16px] font-Inter text-[1rem] pl-[48px] rounded-[4px] h-[50px] md:w-[97%] w-full bg-white border border-zinc-500 "
+                value="Lucknow,"
               />
-              <GrLocation className="absolute top-[35%] left-[2%] h-[1rem] w-[1rem] text-zinc-500" />
+              <GrLocation className="absolute top-[30%] left-[4%] h-[1.5rem] w-[1.5rem] text-zinc-500" />
             </div>
-            <button className="h-[50px]  bg-blue rounded-[12px] md:w-[50%] w-full text-white font-[500] my-3 md:my-0 ">
-              search jobs
+            <button className="h-[50px]  bg-bluee hover:bg-blue-800 rounded-[10px] text-[1.1875rem] md:w-[50%] w-full text-white font-[500] my-1 md:my-0 ">
+              Search jobs
             </button>
           </div>
           <div className="pt-[3rem] w-full h-full">
-            <p className="text-[1.5rem] font-[500]">Popular search</p>
-            <div className="pt-[1rem]">
-              <ul className="flex md:flex-wrap justify-between w-full  overflow-x-scroll">
+            <p className="text-[1.1875rem] font-[500]">Popular search</p>
+            <div className="py-[1rem]  flex flex-col items-center w-full">
+              <ul className="flex md:flex-wrap items-center w-full no-scrollbar   h-full  overflow-x-scroll">
                 {search.map((item, index) => {
                   return (
                     <>
@@ -138,8 +138,8 @@ export default function Home() {
                   );
                 })}
               </ul>
-              <div className="w-full h-full flex justify-center mt-8">
-                <button className=" h-[50px] rounded-[8px] px-[2rem] w-full lg:w-[20%] border-2 border-blue  text-blue hover:bg-blue hover:text-white">
+              <div className="w-full h-full   flex justify-center mt-8">
+                <button className=" h-[50px] rounded-[8px] px-[2rem] w-full lg:w-[16%] whitespace-nowrap border-2 border-bluee text-blueee text-bluee hover:bg-indigo text-[1.1875rem] font-[500]  ">
                   Explore more jobs
                 </button>
               </div>
@@ -148,32 +148,35 @@ export default function Home() {
         </div>
       </div>
       {/* new section start */}
-      <div className="pt-[3rem]">
-        <h3 className="w-full  text-[1.75rem] pb-[10px] text-center lg:text-[3rem] font-[500] px-4">
+      <div className="pt-[3rem] flex flex-col items-center">
+        <h3 className="  text-[1.75rem] pb-[10px] text-center lg:text-[3rem] w-[80%] md:w-full font-[500] px-4">
           See what millions of workers are saying
         </h3>
-        <div className="pt-[1rem] w-full h-full">
-          <Carousel />
+        <div className="pt-[1rem] w-full h-full flex flex-col items-center">
+        <div className="max-w-[1296px] w-full">
+        <Carousel />
+        </div>
+          
           <div className="w-full h-full flex justify-center py-8">
-            <button className=" h-[50px] rounded-[8px] mx-4 px-[2rem] w-full lg:w-[25%] border-2 border-blue font-[500]  text-blue hover:bg-blue hover:text-white">
+            <button className=" h-[50px] rounded-[8px] mx-4 px-[2rem] w-full md:w-[25%] border-2 border-bluee font-[500]  text-bluee hover:bg-indigo text-[1.1875rem]">
               Explore the jobcase community
             </button>
           </div>
         </div>
       </div>
       <div className="pt-[2rem]">
-        <h3 className="w-full  text-[1.75rem] pb-[10px] text-center lg:text-[3rem] font-[500] px-4">
+        <h3 className="w-full   pb-[10px] font-FoundersA text-center text-[3rem] font-[500] px-4">
           Work with top employers & local businesses
         </h3>
-        <div className="my-5 pb-[4rem] flex justify-center ">
-          <div className="grid lg:grid-cols-6 grid-cols-3 gap-5 mx-4 container ">
+        <div className="my-5 pb-[2rem] md:pb-[4rem] flex justify-center  ">
+          <div className="grid md2:grid-cols-6 grid-cols-3 gap-5 items-center justify-center mx-4 w-full max-w-[1280px]  ">
             {images.map((item, index) => {
               return (
-                <div key={index} className="lg:w-[150px] lg:h-[48px]">
+                <div key={index} className="md:w-[150px] bg-red-600  max-w-full max-h-full flex justify-center overflow-hidden md:h-[48px]">
                   <img
                     src={item}
                     alt="as"
-                    className="flex w-full h-[40px] justify-center"
+                    className="flex justify-center"
                   />
                 </div>
               );
@@ -181,8 +184,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="lg:p-[3.5rem] p-[2rem] bg-blue flex items-center justify-center flex-wrap">
-        <p className="lg:text-[3.5rem] text-[2rem] font-[700] text-white text-center pr-12">
+      <div className="lg:pt-[3.5rem] lg:pb-0 p-[2rem] bg-bluee flex items-center justify-center flex-wrap">
+        <p className="lg:text-[3.5rem] text-[2rem] font-[700] font-cond text-white text-center pr-12">
           GET TOGETHER. GET AHEAD.
         </p>
         <button className="lg:w-[160px] w-full h-[50px] bg-orange-600 mt-10 lg:mt-0 text-white font-[500] rounded-[12px]">
@@ -212,7 +215,7 @@ export default function Home() {
           </div>
           <Link
             href="#"
-            className="text-blue flex items-center text-[18px] font-[500] mt-5"
+            className="text-bluee flex items-center text-[18px] font-[500] mt-5"
           >
             See them all
             <FiArrowRight className="ml-2" />
@@ -242,7 +245,7 @@ export default function Home() {
             </ul>
             <Link
             href="#"
-            className="text-blue flex items-center text-[18px]  font-[500] mt-5"
+            className="text-bluee flex items-center text-[18px]  font-[500] mt-5"
           >
            See what people are talking about
             <FiArrowRight className="ml-2" />

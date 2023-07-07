@@ -21,7 +21,7 @@ function Header() {
   ];
   return (
     <>
-      <div className="w-full h-[78px] border-[1px] fixed flex justify-center z-50 bg-white ">
+      <div className="w-full md:h-[85px] h-[56px] top-0 border-[1px] fixed flex justify-center z-50 bg-white ">
         <div className="w-[98%] flex items-center justify-between h-full">
        
           <div className=" w-[15%]  h-full  flex   justify-start items-center ">

@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
      <Header/>
-     <div className='pt-[78px]'>
+     <div className='mt-[56px]'>
      <Component {...pageProps} />
      </div>
      {/* <Footer/> */}
