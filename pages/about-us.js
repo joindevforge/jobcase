@@ -181,12 +181,40 @@ function Aboutus() {
           </div>
         </div>
       </div>
-      <div className="bg-[#f4f4f4] py-[5rem] pl-[3.4375rem]">
-        <h2 className="mb-[74px] text-center font-Founders text-[3rem] font-[500] ">
+      <div className="bg-[#f4f4f4] md:py-[5rem] py-[2.5rem] md:pl-[3.4375rem] px-4">
+        <h2 className="md:mb-[74px] mb-[32px] text-center font-Founders md:text-[3rem] text-[1.75rem] font-[500] ">
           One team. One community.
         </h2>
         <div className="w-full h-full">
           <Community />
+        </div>
+      </div>
+      <div className="w-full h-full py-[40px] px-[1rem]">
+        <h2 className="text-center mb-[3.75rem]  font-Founders font-[500] text-[1.5rem]">
+          Jobcase is proud to have the support of our investment partners
+        </h2>
+        <div className="flex items-center justify-between">
+          <div className="w-full h-full  object-cover flex justify-center">
+            <img
+              src="/images/about/last/psg-logo.png"
+              alt="logo"
+              className="md:max-w-[300px] w-full"
+            />
+          </div>
+          <div className="w-full h-full object-cover flex justify-center">
+            <img
+              src="/images/about/last/wd.png"
+              alt="logo"
+              className="md:max-w-[300px] w-full"
+            />
+          </div>
+          <div className="w-full h-full object-cover flex justify-center">
+            <img
+              src="/images/about/last/Savano.png"
+              alt="logo"
+              className="md:max-w-[300px] w-full"
+            />
+          </div>
         </div>
       </div>
     </>
