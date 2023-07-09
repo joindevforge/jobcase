@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
      <div className='mt-[85px]'>
      <Component {...pageProps} />
      </div>
-     {/* <Footer/> */}
+     <Footer/>
     </>
   )
 }
