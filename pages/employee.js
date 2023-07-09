@@ -1,4 +1,6 @@
 import Card3 from "@/components/reusable/Card3";
+import Card4 from "@/components/reusable/Card4";
+import Carousel2 from "@/components/reusable/Carousel2";
 import Link from "next/link";
 import React from "react";
 
@@ -44,6 +46,33 @@ const cardData = [
   },
 ];
 
+const cardData2 = [
+  {
+    img: "/images/employee/kelly.png",
+    desc: "We’ve held several virtual hiring events with Jobcase and they’ve been very successful. Having the capability for virtual events has been extremely helpful for efficiency and has really put candidates at ease. Jobcase is very responsive to our needs and great!at getting qualified candidates to show up.",
+    name: "Tara Marcelle, VP Recruiting",
+    company: "Kelly",
+  },
+  {
+    img: "/images/employee/whole.png",
+    desc: "Jobcase. There is no one like them! The urgency, the communication, the data, the scalability by brand and by location, the niche vs. the standard. They get it all. Jobcase understands our business and the deliverables of high volume hiring teams.",
+    name: "Kat Barcelona, Senior Recruiter",
+    company: "Whole Foods Market",
+  },
+  {
+    img: "/images/employee/chews.png",
+    desc: "obcase is a great partner in every sense of the word. Data driven. Passionate about results. Committed to client satisfaction. They were able to step right in, and help us not only meet, but exceed our hiring event goals.",
+    name: "Colby Williamson, Director of Staffing",
+    company: "Chewy.com",
+  },
+  {
+    img: "/images/employee/integrity.png",
+    desc: "Jobcase is a valuable partner in our candidate attraction strategy. They are able to deliver a large volume of candidates quickly.",
+    name: "Todd Bavol, CEO",
+    company: "Integrity Staffing Solutions",
+  },
+];
+
 function Employee() {
   return (
     <>
@@ -52,7 +81,7 @@ function Employee() {
           src="/images/employee/employer-hero-2.png"
           alt="Picture of the author"
         />
-        <div className="w-full h-full flex justify-center">
+        <div className="w-full h-full flex justify-center ">
           <div className="max-w-[980px] w-full h-full">
             <h1 className="md:text-[4.375rem] text-[3rem] md:mt-[4.6875rem] mt-[40px] font-[700] font-cond  text-bluee w-full text-center leading-[60px] ">
               WORKERS READY WHEN YOU ARE
@@ -157,41 +186,75 @@ function Employee() {
         </div>
 
         {/*  card end */}
-        <div className="w-full h-full flex justify-center">
-          <div className="w-full max-w-[1440px] h-full pt-[160px] md:px-[40px] px-4 pb-[40px] ">
-            <h2 className="md:text-[3rem] pb-[2.5rem] text-[2.125rem] lg:leading-[3rem] leading-[2rem] font-[500] text-center font-Founders w-full ">
+        <div className="w-full h-full flex justify-center ">
+          <div className="w-full max-w-[1440px]  h-full md:pt-[160px] pt-[80px]  md:px-[40px] px-4 ">
+            <h2 className="md:text-[3rem]  text-[2.125rem] lg:leading-[3rem] leading-[2rem] font-[500] text-center font-Founders w-full ">
               How we connect you with workers
             </h2>
-            <div className="w-full h-full flex justify-center max-w-[1086px] mx-auto my-0 mb-[120px]">
-              <div className="w-full h-full grid sm:grid-cols-2 grid-cols-1 gap-4">
-              {cardData.map((item, index) => {
-                return (
-                  <>
-                    <Card3
-                      key={index}
-                      title={item.title}
-                      desc={item.desc}
-                      img={item.img}
-                    />
-                  </>
-                );
-              })}
+            <div className="w-full h-full flex justify-center max-w-[1130px] mx-auto my-0 mb-[120px]">
+              <div className="w-full  grid sm:grid-cols-2   grid-cols-1 ">
+                {cardData.map((item, index) => {
+                  return (
+                    <>
+                      <div className="w-full  flex justify-center h-full ">
+                        <Card3
+                          key={index}
+                          title={item.title}
+                          desc={item.desc}
+                          img={item.img}
+                        />
+                      </div>
+                    </>
+                  );
+                })}
               </div>
             </div>
           </div>
         </div>
-        <div className="pt-[4rem] w-full h-full ">
+        <div className=" w-full h-full  ">
           <p className="md:text-[2.25rem] pb-[2.5rem] text-[2rem] lg:leading-[3rem] leading-[2rem] font-[500] text-center font-Founders w-full">
             Tap into the power of the Jobcase community
           </p>
           <div className="w-full h-full flex justify-center items-center pb-20">
             <Link
               href="#"
-              className="py-[12px] mx-4 px-[40px] font-bold flex items-center justify-center bg-[#fc6142] h-[50px] lg:w-auto w-full rounded-[8px] text-white font-500"
+              className="py-[12px] mx-4 px-[40px] font-bold flex items-center justify-center bg-[#fc6142] h-[50px] md:w-auto w-full rounded-[8px] text-white font-500"
             >
               Contact us
             </Link>
           </div>
+        </div>
+        <div className="md:py-[5rem] py-[2.5rem] md:px-[3.75rem] px-[1rem] bg-[#f4f4f4] flex justify-center">
+          <div className="max-w-[1440px] w-full h-full p-0">
+            <h2 className="mb-[2rem]  font-Founders md:text-[36px] text-[28px] font-[500]">
+              What our clients are saying:
+            </h2>
+            <div className=" hidden md:grid  grid-cols-2 gap-10">
+              {cardData2.map((item, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="w-full h-full flex justify-center"
+                  >
+                    <Card4
+                      name={item.name}
+                      img={item.img}
+                      desc={item.desc}
+                      company={item.company}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+            <div className="w-full h-full block md:hidden">
+                <Carousel2/>
+            </div>
+            <div className="w-full mt-10 md:mt-16">
+             <p className="text-center font-Inter text-[1rem] font-[400]">“The four current Workday Venture partners are some of the strongest recruiting technologies in the game right now.”<br/>
+             <strong className="font-[600] font-Inter text-[1rem] text-center">– Tim Sackett</strong></p>
+            </div>
+          </div>
+
         </div>
       </div>
     </>
