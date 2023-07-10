@@ -97,7 +97,7 @@ export default function Home() {
           Top ways to help you get ahead
         </h3>
         <div className="w-full h-full flex items-center justify-center  md:px-20 px-4">
-          <div className="max-w-[1296px] w-full px-4 md:px-0  grid lg:grid-cols-3 grid-cols-1 gap-4 items-center justify-center">
+          <div className="max-w-[1296px] w-full px-1 md:px-0  grid lg:grid-cols-3 grid-cols-1 gap-4 items-center justify-center">
             {card1data.map((item, index) => {
               return (
                 <Card1
@@ -233,12 +233,12 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="pt-[3rem] flex justify-center  items-center">
+      <div className="pt-[3rem]  md:px-[5rem] px-4 flex justify-center  items-center">
         <div className="max-w-[1280px] w-full">
           <h3 className="text-[2.25rem] w-full text-start  font-[500]  px-2">
             Trending topics
           </h3>
-      <div className="pt-[1rem] w-full md:px-0 px-4  pb-[5rem]">
+      <div className="pt-[1rem] w-full   pb-[5rem]">
         <ul className="flex  md:flex-wrap   overflow-x-scroll no-scrollbar ">
           {search2.map((item, index) => {
             return (
